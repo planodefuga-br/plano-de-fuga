@@ -113,11 +113,16 @@ def _vars(sz):
     v = SIZES[sz]
     return ";".join(f"--{k}:{val}px" if isinstance(val, int) else f"--{k}:{val}" for k, val in v.items())
 
-def pol_slide(sl, i, n, kicker, sz="post", seed=0, show_stamp=True):
+def _words(txt, reveal):
+    if reveal is None: return esc(txt)
+    ws = txt.split(" ")
+    return " ".join(esc(w) if k < reveal else f'<span style="visibility:hidden">{esc(w)}</span>' for k, w in enumerate(ws))
+
+def pol_slide(sl, i, n, kicker, sz="post", seed=0, show_stamp=True, reveal=None):
     t = sl["t"]
     parts = []
     if t in ("cover", "title"):
-        parts.append(f'<div class="kick">{esc(sl["k"])}</div><div class="hook">{esc(sl["h"])}</div>')
+        parts.append(f'<div class="kick">{esc(sl["k"])}</div><div class="hook">{_words(sl["h"], reveal)}</div>')
     elif t == "clip":
         rot = [-1.4, 1.1, -0.6, 1.6, -1.8, 0.7][seed % 6]
         stamp = f'<div class="stamp">{esc(sl["stamp"])}</div>' if sl.get("stamp") and show_stamp else ""
@@ -126,7 +131,7 @@ def pol_slide(sl, i, n, kicker, sz="post", seed=0, show_stamp=True):
 <div class="hd">{esc(sl["head"])}</div></div>{stamp}</div>''')
         if sl.get("note"): parts.append(f'<div class="tape">{esc(sl["note"])}</div>')
     elif t == "say":
-        parts.append(f'<div class="say">{esc(sl["h"])}</div>')
+        parts.append(f'<div class="say">{_words(sl["h"], reveal)}</div>')
         if sl.get("s"): parts.append(f'<div class="sub">{esc(sl["s"])}</div>')
     elif t == "split":
         def col(c, s):
@@ -137,8 +142,8 @@ def pol_slide(sl, i, n, kicker, sz="post", seed=0, show_stamp=True):
         parts.append(f'<div class="say" style="font-size:calc(var(--say)*.72)">{esc(sl["h"])}</div><div class="split">{col(sl["l"],seed+1)}{col(sl["r"],seed+2)}</div>')
     elif t == "exit":
         parts.append('<div class="exitstamp"><small>SAÍDA · DEPARTURE</small>PLANO DE FUGA<small>✈ BRASIL → MUNDO</small></div>')
-        parts.append(f'<div class="say" style="font-size:calc(var(--say)*.78)">{esc(sl["h"])}</div>')
-        parts.append(f'<div class="sub">Bolsa, visto e trabalho fora do Brasil. Todo dia aqui.</div>')
+        parts.append(f'<div class="say" style="font-size:calc(var(--say)*.78)">{_words(sl["h"], reveal)}</div>')
+        if sz == "post": parts.append(f'<div class="sub">Bolsa, visto e trabalho fora do Brasil. Todo dia aqui.</div>')
     src = sl.get("src")
     if t == "clip" and not src: src = None
     foot_l = f"FONTE · {esc(src)}" if src else ""
@@ -146,10 +151,9 @@ def pol_slide(sl, i, n, kicker, sz="post", seed=0, show_stamp=True):
     counter = f"{i+1}/{n}" if sz == "post" else ""
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{FONT_CSS}{POL_CSS}</style></head>
 <body style="{_vars(sz)}"><div class="f">
-<div class="bar"><b>✈ PLANO DE FUGA</b><span>{esc(kicker)}{' · ' + counter if counter else ''}</span></div>
+{'' if sz == "story" else f'<div class="bar"><b>✈ PLANO DE FUGA</b><span>{esc(kicker)}{" · " + counter if counter else ""}</span></div>'}
 <div class="body">{''.join(parts)}</div>
-<div class="foot"><span>{foot_l}</span>{arrow}</div>
-<div class="mrz">{esc(mrz(kicker))}</div>
+{'' if sz == "story" else f'<div class="foot"><span>{foot_l}</span>{arrow}</div><div class="mrz">{esc(mrz(kicker))}</div>'}
 </div></body></html>"""
 
 # ---------------------------------------------------------------- GUIA

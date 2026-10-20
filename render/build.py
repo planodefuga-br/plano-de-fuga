@@ -42,6 +42,10 @@ def main(only=None):
             for i, c in enumerate(reel["cards"]):
                 html = pol_slide(c, i, n, kick, "story", seed=i * 3 + 1)
                 if not shot(pg2, html, d / f"{i:02d}.png", 1080, 1920, jpeg=False): warn.append(f"{reel['id']} card {i}")
+                if c["t"] in ("say", "title", "exit"):
+                    nw = len(c["h"].split(" "))
+                    for k in range(1, nw):
+                        shot(pg2, pol_slide(c, i, n, kick, "story", seed=i * 3 + 1, reveal=k), d / f"{i:02d}_w{k:02d}.png", 1080, 1920, jpeg=False)
                 if c.get("stamp"):
                     shot(pg2, pol_slide(c, i, n, kick, "story", seed=i * 3 + 1, show_stamp=False), d / f"{i:02d}_pre.png", 1080, 1920, jpeg=False)
         b.close()

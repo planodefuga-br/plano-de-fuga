@@ -22,12 +22,14 @@ def frames_for(card, fast):
     return BEAT
 
 MUSICA = ROOT / "assets" / "audio" / "happy-nation.mp3"
+REFRAO = 77.55   # segundo em que o refrão começa na faixa (análise de repetição; volta em ~2:33)
+WHIP = 5         # frames da transição em chicote
 
 def render(reel):
     total = sum(frames_for(c, reel.get("fast", False)) for c in reel["cards"]) / FPS
     global AUDIO_IN, AUDIO_FX
     if MUSICA.exists():
-        AUDIO_IN = ["-i", str(MUSICA)]
+        AUDIO_IN = ["-ss", str(REFRAO), "-i", str(MUSICA)]
         AUDIO_FX = ["-af", f"afade=t=out:st={max(total-1.5,0):.2f}:d=1.5"]
     else:
         AUDIO_IN = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]; AUDIO_FX = []
@@ -45,12 +47,16 @@ def render(reel):
     for i, card in enumerate(reel["cards"]):
         full = Image.open(d / f"{i:02d}.png").convert("RGB")
         pre = Image.open(d / f"{i:02d}_pre.png").convert("RGB") if (d / f"{i:02d}_pre.png").exists() else None
+        palavras = [Image.open(p).convert("RGB") for p in sorted(d.glob(f"{i:02d}_w*.png"))]
         SW, SH = full.size
         n = frames_for(card, fast)
         stamp_at = n // 2 - 6 if not fast else n // 3
         is_clip = card["t"] == "clip"
         for f in range(n):
             src = pre if (pre is not None and f < stamp_at) else full
+            if palavras:
+                fim = int(n * 0.55); k = int(f / max(fim, 1) * (len(palavras) + 1))
+                if k < len(palavras): src = palavras[k]
             # zoom: slam nos primeiros frames, depois push lento
             z = 1.0 + 0.045 * (f / n)
             if f < 7 and card["t"] != "exit": z += 0.12 * (1 - ease(f / 7))
@@ -64,6 +70,13 @@ def render(reel):
             box = (cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2)
             im = src.resize((OW, OH), Image.BILINEAR, box=box)
             a = np.asarray(im, dtype=np.int16)
+            # chicote: sai pra esquerda no fim do card, entra pela direita no começo
+            desl = 0
+            if f >= n - WHIP and i < len(reel["cards"]) - 1: desl = -int(OW * 0.45 * ease((f - (n - WHIP) + 1) / WHIP))
+            elif f < WHIP and i > 0: desl = int(OW * 0.45 * (1 - ease((f + 1) / WHIP)))
+            if desl:
+                a = np.roll(a, desl, axis=1)
+                a = (a + np.roll(a, 18, axis=1) + np.roll(a, -18, axis=1) + np.roll(a, 36, axis=1)) // 4
             a = a + grains[(gi // 2) % 6]; gi += 1
             if is_clip and f < 3: a = a + int((0.42, 0.22, 0.08)[f] * 255)
             if pre is not None and f == stamp_at: a = a + 40
