@@ -1,11 +1,15 @@
 {
- "quando": "2026-10-20T21:55:28.304866+00:00",
+ "quando": "2026-10-20T21:56:08.350604+00:00",
  "token_presente": true,
  "conta": "planodefuga_br",
  "pagina": "Plano de Fuga",
  "ok_conta": true,
- "audio_busca": "Happy Nation",
- "audio_resultados": [],
+ "audio": {
+  "Happy Nation": [],
+  "Ace of Base": [],
+  "Happy Nation Ace of Base": [],
+  "(em alta, sem busca)": []
+ },
  "limite_publicacao": [
   {
    "quota_usage": 0,
