@@ -38,5 +38,20 @@
    "p1-processos/03.jpg",
    "p1-processos/04.jpg"
   ]
+ },
+ {
+  "id": "g-salario-minimo",
+  "type": "carousel",
+  "auto": true,
+  "publish_at": "2026-10-20T23:12:13Z",
+  "caption": "Salário mínimo de 2026: R$ 1.621 no Brasil e € 920 em Portugal (continente).\n\nNo câmbio de 20/10, o mínimo português dá R$ 5.180 por mês, 3,2 vezes o brasileiro. Portugal paga 14 salários por ano, e o Brasil, 13.\n\nAluguel e mercado também custam mais em Portugal. O próximo guia compara o custo de vida.\n\nFontes: Decreto 12.797/2025, Diário da República (29/12/2025), Banco Central (PTAX de 20/10/2026).\n\n#salariominimo #morarfora #portugal #planodefuga",
+  "media": [
+   "g-salario-minimo/01.jpg",
+   "g-salario-minimo/02.jpg",
+   "g-salario-minimo/03.jpg",
+   "g-salario-minimo/04.jpg",
+   "g-salario-minimo/05.jpg",
+   "g-salario-minimo/06.jpg"
+  ]
  }
 ]
