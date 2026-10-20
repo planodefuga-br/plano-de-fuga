@@ -326,15 +326,16 @@ GUIA.append({"id": "g-salario-minimo", "publish_at": "2099-01-01T00:00:00Z", "st
  ],
  "caption": ""})
 
-REELS.append({"id": "r-p1-processos", "post_at_brt": "21/10 20h", "cards": [
-  {"t": "title", "k": "FALTAM 4 DIAS", "h": "Lula e Flávio já responderam a processo."},
+REELS.append({"id": "r-p1-processos", "post_at_brt": "20/10 20h", "cards": [
+  {"t": "title", "k": "FALTAM 5 DIAS", "h": "Lula e Flávio já responderam a processo."},
+  {"t": "say", "h": "Um desses dois vai nos governar pelos próximos 4 anos."},
+  {"t": "say", "h": "Você já pensou no seu plano de fuga?"},
   clip("lula_entrega", stamp="PRESO"),
   {"t": "say", "h": "Lula ficou 580 dias preso em Curitiba."},
   clip("fachin", stamp="ANULADO"),
   {"t": "say", "h": "O STF anulou porque a Vara de Curitiba não podia julgar o caso."},
   clip("rachadinha", stamp="ARQUIVADO"),
   {"t": "say", "h": "O STJ considerou as provas ilícitas. O mérito nunca foi julgado."},
-  {"t": "say", "h": "Um desses dois vai nos governar pelos próximos 4 anos."},
-  {"t": "exit", "h": "Você já pensou no seu plano de fuga?"},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
  ],
  "caption": ""})
