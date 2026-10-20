@@ -14,7 +14,7 @@ H = {
  "coveiro":       ("Bolsonaro sobre número de mortes por coronavírus: 'Não sou coveiro'", "A GAZETA", "21.04.2020"),
  "golpe":         ("STF condena Bolsonaro a 27 anos e três meses de prisão", "DIÁRIO DO COMÉRCIO", "11.09.2025"),
  "mansao":        ("Flávio Bolsonaro compra mansão em Brasília por R$ 6 milhões, diz site", "A GAZETA", "MAR.2021"),
- "rachadinha":    ("TJ do Rio arquiva denúncia do MP contra Flávio Bolsonaro em caso das “rachadinhas”", "INFOMONEY / REUTERS", "16.05.2022"),
+ "rachadinha":    ("TJ do Rio arquiva denúncia do MP contra Flávio Bolsonaro em caso das “rachadinhas”", "INFOMONEY / REUTERS", "17.05.2022"),
  "dirceu":        ("Supremo condena Dirceu por compra de voto no Congresso", "FOLHA DE S.PAULO", "10.10.2012"),
  "inss":          ("Presidente do INSS é afastado em operação que apura fraude bilionária contra aposentados", "ITATIAIA", "23.04.2025"),
 }
@@ -313,3 +313,28 @@ Fontes: O Povo, InfoMoney/Reuters, Congresso em Foco, A Gazeta, Folha de S.Paulo
 
 #eleicoes2026 #segundoturno #planodefuga"""},
 ]
+
+
+# ===================== 21/10/2026: formatos aprovados =====================
+GUIA.append({"id": "g-salario-minimo", "publish_at": "2099-01-01T00:00:00Z", "stamp": ("PORTUGAL", "SALÁRIO MÍNIMO"), "slides": [
+  {"t": "cover", "k": "BRASIL × PORTUGAL", "h": "Quanto vale o salário mínimo de Portugal em reais."},
+  {"t": "page", "lab": "NO BRASIL", "h": "R$ 1.621 por mês.", "s": "Valor de 2026. São 13 salários no ano, contando o 13º.", "src": "Decreto 12.797/2025"},
+  {"t": "page", "lab": "EM PORTUGAL", "h": "€ 920 por mês.", "s": "Valor de 2026 no continente. São 14 salários no ano.", "src": "Diário da República, 29/12/2025"},
+  {"t": "page", "lab": "EM REAIS", "h": "R$ 5.180 por mês.", "s": "€ 920 × R$ 5,63, o euro de 20/10/2026. Dá 3,2 vezes o mínimo brasileiro.", "src": "Banco Central (PTAX)"},
+  {"t": "page", "lab": "NO ANO", "h": "R$ 21.073 no Brasil. R$ 72.521 em Portugal.", "s": "13 e 14 salários, no câmbio de 20/10/2026."},
+  {"t": "cta", "h": "Aluguel e mercado também custam mais em Portugal.", "s": "O próximo guia compara o custo de vida."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-p1-processos", "post_at_brt": "21/10 20h", "cards": [
+  {"t": "title", "k": "FALTAM 4 DIAS", "h": "Lula e Flávio já responderam a processo."},
+  clip("lula_entrega", stamp="PRESO"),
+  {"t": "say", "h": "Lula ficou 580 dias preso em Curitiba."},
+  clip("fachin", stamp="ANULADO"),
+  {"t": "say", "h": "O STF anulou porque a Vara de Curitiba não podia julgar o caso."},
+  clip("rachadinha", stamp="ARQUIVADO"),
+  {"t": "say", "h": "O STJ considerou as provas ilícitas. O mérito nunca foi julgado."},
+  {"t": "say", "h": "Um desses dois vai nos governar pelos próximos 4 anos."},
+  {"t": "exit", "h": "Você já pensou no seu plano de fuga?"},
+ ],
+ "caption": ""})

@@ -202,10 +202,9 @@ def guia_slide(post, sl, i, n):
     arrow = '<span class="arrow">→</span>' if i < n - 1 else ""
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{FONT_CSS}{GUIA_CSS.replace('GUIL', _GUIL)}</style></head>
 <body><div class="f {t}">
-<div class="bar">✈ PLANO DE FUGA<span>PÁG. {i+1:02d}/{n:02d}</span></div><div class="rule"></div>
+<div class="bar">✈ PLANO DE FUGA<span></span></div><div class="rule"></div>
 <div class="body">{''.join(parts)}</div>
 <div class="foot"><span>{src}</span>{arrow}</div>
-<div class="mrz">{esc(mrz(kicker))}</div>
 </div></body></html>"""
 
 FIT_JS = """() => {

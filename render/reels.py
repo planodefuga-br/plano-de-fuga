@@ -21,7 +21,16 @@ def frames_for(card, fast):
     if fast: return 42
     return BEAT
 
+MUSICA = ROOT / "assets" / "audio" / "happy-nation.mp3"
+
 def render(reel):
+    total = sum(frames_for(c, reel.get("fast", False)) for c in reel["cards"]) / FPS
+    global AUDIO_IN, AUDIO_FX
+    if MUSICA.exists():
+        AUDIO_IN = ["-i", str(MUSICA)]
+        AUDIO_FX = ["-af", f"afade=t=out:st={max(total-1.5,0):.2f}:d=1.5"]
+    else:
+        AUDIO_IN = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]; AUDIO_FX = []
     d = ROOT / "build" / "reels" / reel["id"]
     fast = reel.get("fast", False)
     OUT.mkdir(parents=True, exist_ok=True)
@@ -29,8 +38,8 @@ def render(reel):
     rng = np.random.default_rng(4)
     grains = [rng.normal(0, 5, (OH, OW, 1)).astype(np.int16) for _ in range(6)]
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{OW}x{OH}", "-r", str(FPS), "-i", "-",
-           "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
-           "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-maxrate", "9M", "-bufsize", "18M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "64k", "-movflags", "+faststart", str(out)]
+           *AUDIO_IN, "-shortest",
+           "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-maxrate", "9M", "-bufsize", "18M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", *AUDIO_FX, "-movflags", "+faststart", str(out)]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     r = random.Random(1); gi = 0
     for i, card in enumerate(reel["cards"]):
