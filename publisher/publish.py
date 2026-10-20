@@ -10,6 +10,8 @@ Env:
 
 No manifest, um Reel pode ter:
   "audio": {"busca": "Happy Nation", "volume_audio": 100, "volume_video": 0}
+Se a Audio API achar a música, ela é anexada (e o som do vídeo vai a volume_video).
+Se não achar, o Reel sai com a faixa que já está embutida no MP4.
 """
 import json, os, sys, time, pathlib, urllib.request, urllib.parse, urllib.error, datetime as dt
 
@@ -76,14 +78,20 @@ def publish(ig, post):
         params = dict(media_type="REELS", video_url=f"{BASE}/{post['media'][0]}", caption=post["caption"], share_to_feed="true")
         a = post.get("audio")
         if a:
-            achados = buscar_audio(ig, a["busca"])
-            if not achados:
-                raise RuntimeError(f"áudio não encontrado: {a['busca']}")
-            params["audio_configuration"] = json.dumps({
-                "audio_id": achados[0]["audio_id"],
-                "audio_volume": a.get("volume_audio", 100),
-                "video_volume": a.get("volume_video", 0),
-            })
+            try:
+                achados = buscar_audio(ig, a["busca"])
+            except Exception as e:
+                print("Audio API falhou, segue com a faixa do vídeo:", e)
+                achados = []
+            if achados:
+                params["audio_configuration"] = json.dumps({
+                    "audio_id": achados[0]["audio_id"],
+                    "audio_volume": a.get("volume_audio", 100),
+                    "video_volume": a.get("volume_video", 0),
+                })
+                print("áudio da API:", achados[0].get("title"), "-", achados[0].get("display_artist"))
+            else:
+                print("áudio não achado na API, segue com a faixa que já está no vídeo")
         c = call("POST", f"{ig}/media", **params)["id"]
         wait_ready(c, video=True)
     else:

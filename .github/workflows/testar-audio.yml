@@ -1,0 +1,29 @@
+name: Testar Audio API
+# Todo dia confere se a Audio API do Instagram já libera música pra conta.
+# Só testa, nunca publica. Resultado em publisher/teste.json.
+on:
+  schedule:
+    - cron: "17 11 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: publicar
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Testar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          DRY_RUN: "1"
+        run: python publisher/publish.py
+      - name: Salvar resultado
+        if: always()
+        run: |
+          git config user.name "plano-de-fuga-bot"
+          git config user.email "bot@users.noreply.github.com"
+          [ -f publisher/teste.json ] && git add publisher/teste.json; true
+          git diff --cached --quiet || (git commit -m "teste da Audio API" && git push)
