@@ -22,7 +22,7 @@ Cortar o enfeite não pode tirar informação. Se a frase genérica escondia um 
 1. **Travessão nunca, sem exceção.** Nem o longo (U+2014) nem o médio (U+2013), em nenhum texto, nem entre números, nem em manchete de jornal. Troque por ponto, vírgula, dois-pontos, parênteses ou hífen ("-"). Intervalo de números: "2019 a 2022" ou "2019-22". Manchete que vem com travessão é reproduzida com hífen no lugar, e o resto fica literal.
 2. **Fonte com nome.** Nada de "especialistas dizem" ou "estudos mostram". Diga quem: "segundo a Comissão Europeia", "o TSE diz".
 3. **Verbo concreto no lugar de abstração.** "A bolsa paga €1.400 por mês", e não "a bolsa oferece um apoio financeiro significativo".
-4. As regras de `projeto-claude/INSTRUCOES.md` e `projeto-claude/regras.md` continuam valendo (fato checado, manchete literal, dois lados com o mesmo peso). Se o `regras.md` tiver regra mais nova que esta skill, vale o `regras.md`.
+4. As regras de `projeto-claude/INSTRUCOES.md` e `projeto-claude/regras.md` continuam valendo (fato checado, manchete literal, os dois lados com o mesmo rigor). Se o `regras.md` tiver regra mais nova que esta skill, vale o `regras.md`.
 
 ## O que cortar
 
@@ -86,6 +86,13 @@ crucial, fundamental, essencial, vital, primordial, notável, inegável, signifi
 A IA evita repetir palavra e troca "visto" por "documento migratório", "autorização", "permissão". Isso confunde.
 - Fazer: repetir a palavra certa. "Visto" é "visto" o post inteiro.
 
+### 14. Frase de efeito e fecho de suspense
+A IA fecha o texto com uma "moral" e cria suspense com frase curta solta. É o vício mais fácil de deixar passar.
+- Cortar: "a conta de verdade é...", "o que importa é...", "a pergunta é...", "e isso muda tudo", "esse é o próximo post.", "spoiler:", "faz a conta.", "simples assim.", "pensa nisso."
+- Cortar: ponto final no meio da ideia só pra criar pausa dramática ("Dois processos. Nenhum julgamento.", "Um país. Duas versões."), e frase de 2 a 5 palavras isolada no fim pra dar ritmo.
+- Cortar: "Este post não diz X. Diz Y." e "Não é sobre X. É sobre Y." (paralelismo negativo disfarçado de esclarecimento).
+- Fazer: terminar no último fato. Se tem continuação, dizer o que vem, de forma concreta e sem suspense: "Amanhã sai o custo de vida em Lisboa e Madri."
+
 ## Pontuação e formato
 
 - **Travessão nunca** (ver regras duras). Hífen pode.
@@ -108,10 +115,10 @@ A IA evita repetir palavra e troca "visto" por "documento migratório", "autoriz
 
 - Português do Brasil falado: "pra", "tá", "a gente", "você" com "teu/tua" ("tua urna", "teu avô").
 - O perfil é uma marca. Fala como "a gente" ou impessoal, nunca da vida do dono.
-- O gancho (capa) promete algo que a pessoa não esperava, com fato: "O visto mais pedido por brasileiro acabou. Quase ninguém percebeu."
+- O gancho (capa) traz o fato que a pessoa não esperava, numa frase só e sem pausa dramática: "O visto de procura de trabalho, o mais pedido por brasileiros, acabou em outubro de 2025."
 - Cada slide puxa o próximo. O último puxa o próximo post ou uma ação concreta (salvar, mandar pra alguém, seguir).
 - Sem frase motivacional vazia ("acredite no seu sonho", "o mundo te espera").
-- Política: ataca político, nunca eleitor. Os dois lados com o mesmo peso. Se a pessoa nega, diz que ela nega.
+- Política: ataca político, nunca eleitor. Os dois lados com o mesmo rigor, sem nenhum parecer melhor ou menos pior, e sem falsa equivalência. Se a pessoa nega, diz que ela nega.
 
 ## Exemplos
 
@@ -124,13 +131,17 @@ A IA evita repetir palavra e troca "visto" por "documento migratório", "autoriz
 **Antes:** "Vale ressaltar que o processo pode variar e é fundamental se planejar com antecedência."
 **Depois:** "Cada mestrado tem o próprio prazo. A maioria fecha entre dezembro e fevereiro."
 
+**Antes:** "A conta de verdade é salário menos custo de vida. Esse é o próximo post."
+**Depois:** "Aluguel e mercado também custam mais em Portugal. Amanhã sai essa conta, cidade por cidade."
+
 ## Checagem antes de entregar
 
 1. Procure travessão em tudo que foi escrito. Na pasta do projeto:
    `python3 -c "t=open('content/content.py',encoding='utf-8').read(); print(t.count(chr(0x2013))+t.count(chr(0x2014)))"`
-   Tem que dar zero resultado. Nenhuma exceção.
-2. Leia cada frase e pergunte: ela continua verdadeira se eu trocar o assunto? Se sim, corte ou troque por fato.
-3. Passe pela lista "O que cortar", seção por seção.
-4. Conte as palavras da seção 12. Mais de uma por post é sinal de reescrever.
-5. Veja se a pontuação e o tamanho das frases variam.
-6. Confira que nenhuma informação sumiu na reescrita: todo número, data, nome e fonte do texto original continua lá.
+   Tem que dar 0. Nenhuma exceção.
+2. Leia a última frase de cada slide e da legenda: se ela é uma moral, um suspense ou uma frase curta de efeito, corte (seção 14).
+3. Leia cada frase e pergunte: ela continua verdadeira se eu trocar o assunto? Se sim, corte ou troque por fato.
+4. Passe pela lista "O que cortar", seção por seção.
+5. Conte as palavras da seção 12. Mais de uma por post é sinal de reescrever.
+6. Veja se a pontuação e o tamanho das frases variam.
+7. Confira que nenhuma informação sumiu na reescrita: todo número, data, nome e fonte do texto original continua lá.

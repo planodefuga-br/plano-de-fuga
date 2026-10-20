@@ -54,4 +54,8 @@ Perfil de Instagram **Plano de Fuga**, reativado pra semana do 2º turno (25/10/
 - Lista completa de manchetes em `projeto-claude/manchetes-verificadas.md`.
 ## Descoberto em 20/10/2026
 - Existe a Instagram Audio API: busca música e som em alta e anexa ao Reel na publicação (`audio_configuration`). Exige conta Business ou Criador **com página do Facebook ligada** e app no modo "API com Login do Facebook" (não funciona com "Login do Instagram", que era o plano no SETUP.md). O catálogo pode ser diferente do app, então Happy Nation precisa ser testada. Fonte: developers.facebook.com/docs/instagram-platform/content-publishing/audio-api/
-- GitHub ainda não está conectado ao Claude.
+- GitHub conectado. Repositório: github.com/planodefuga-br/plano-de-fuga (org separada, pra não expor a conta pessoal). Subido em 20/10 só o código, com manifest vazio e agendador desligado (cron comentado no workflow). Pages: https://planodefuga-br.github.io/plano-de-fuga (ligar em Settings > Pages, o Claude não tem acesso a essa API). Página do Facebook já ligada ao Instagram.
+- 20/10 22h56: teste do publicador ok. Token (API com Login do Facebook, app "Plano de Fuga Publisher", caso de uso Instagram) enxerga a conta planodefuga_br ligada à página Plano de Fuga. Limite: 100 publicações por 24h. GitHub Pages ligado. Teste roda sozinho a cada push em publisher/publish.py e grava publisher/teste.json no repo.
+- Audio API devolve lista VAZIA pra qualquer busca, até a de músicas em alta (sem erro). Música automática via API não funciona por enquanto. Decidido (R6): Happy Nation embutida no vídeo + teste diário da API.
+- 20/10 19h34 BRT: primeiro post no ar (n1-salario-minimo, formato tela do celular, media_id 17997461142030932). Agendador ligado (cron a cada 15 min) e push no manifest publica na hora. Próximo: m1-vorcaro (manchete de jornal) às 23h45 UTC.
+- Promessa feita no post n1: "no próximo post a gente faz essa conta" (custo de vida). Cumprir.

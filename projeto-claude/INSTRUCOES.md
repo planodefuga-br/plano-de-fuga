@@ -18,7 +18,7 @@ O perfil é uma MARCA, não uma pessoa. Nunca use dados pessoais do dono: nome, 
 2. Manchete de jornal é reproduzida LITERALMENTE, com veículo e data. Nunca invente nem "melhore" manchete.
 3. Política: os dois lados com o mesmo rigor, sem nenhum lado parecer melhor ou menos pior, e sem falsa equivalência (ver R2 em `regras.md`). Nunca atacar eleitor, só político. Quando um processo foi anulado ou arquivado, diga isso e diga o motivo. Sem acusação que não esteja em veículo grande. Se a pessoa nega, diga que ela nega.
 4. Nada de imagem gerada ou editada de político real. Nada de logo de jornal: o nome do veículo vai em texto.
-5. Música com direito autoral não vai dentro do arquivo. A música entra pelo app.
+5. Música: a Happy Nation (ou outra faixa em alta escolhida pelo dono) vai embutida no MP4 do Reel, por decisão do dono em 20/10/2026. Se a Audio API do Instagram passar a devolver músicas, o publicador anexa pela API. O dono não posta nada à mão (R4).
 
 ## Estética
 Dois mundos com paralelo mínimo (detalhes em `identidade-visual.md`):

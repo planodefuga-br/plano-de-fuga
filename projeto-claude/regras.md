@@ -68,3 +68,39 @@ Regras ditadas pelo dono. Valem pra todo texto do projeto (slide, legenda, rotei
 - Reels de vídeo real: simples e sombrios. Cenas da Lava Jato, Lula e Bolsonaro presos, 8 de janeiro, discursos polêmicos dos dois (pandemia, mulheres, gays, economia), cortados no ritmo de música sombria e em alta.
 - Todos os 16 posts atuais serão substituídos pelos formatos novos, só quando o dono mandar.
 - Ordem: primeiro destravar a publicação automática.
+
+## R6 · Música dentro do vídeo (20/10/2026)
+
+- A Happy Nation vai embutida no MP4 dos Reels. O dono confia que o Instagram reconhece a faixa (já aconteceu com vídeos dele).
+- O publicador tenta a Audio API primeiro. Se ela achar a música, anexa pela API. Se não, sai com a faixa do vídeo.
+- Um teste diário (workflow "Testar Audio API", 11h17 UTC) confere se a API já libera catálogo. Resultado em `publisher/teste.json` no repositório.
+- O arquivo de áudio é fornecido pelo dono e fica em `assets/audio/` (não vai pro repositório público).
+
+## R7 · Nada com cara de slide ou colagem (20/10/2026)
+
+- Nem carrossel nem Reel pode parecer apresentação de slides ou "post de IA/Canva": nada de composição diagramada, forma geométrica no lugar de foto, adesivo, fita, papel inclinado, cartão com rótulo.
+- Vivo = parece visto ou vivido por alguém, não diagramado.
+- Política: formato mini documentário (fotos reais grandes, sangrando, uma linha de texto por foto, tom escuro e frio, desilusão).
+- Guias e comparativos: testar câmera de celular e mini documentário. "Tela do celular" (bloco de notas, print) foi DESCARTADA em 20/10: parece improvisado, como se o dono tivesse postado às pressas.
+- Ajuste do dono em 20/10: pra carrossel, o visual desenhado antigo (passaporte, recorte de jornal) era "bem melhor". A meta é melhorar aquilo, mais visual, e não abandonar o design. O que sai: rodapé com titulozinho, número de página, linha MRZ e outros enfeites de apresentação.
+- A marca (logo, perfil) é mínima. A identidade vem do tom das fotos e do texto.
+- Fotos de banco com licença livre pra uso comercial (Unsplash, Pexels, Wikimedia, Agência Brasil) quando não houver foto própria.
+
+## R8 · Europa inteira, vários temas (20/10/2026)
+
+- O perfil fala de todos os países da Europa (Portugal, Espanha, Itália, Alemanha, Irlanda, França, Holanda etc.), não só Portugal. Variar o país de post pra post.
+- Temas, além de salário mínimo: salário médio por área (com destaque pra tecnologia, que é a área do dono), vistos, burocracia, impostos, custo de vida, vida no dia a dia.
+- Brasil × país X pode ser um país por post ou vários países no mesmo post.
+
+## R9 · Nada vai ao ar sem aprovação (20/10/2026)
+
+- Todo post novo (imagens finais e legenda) é mostrado ao dono ANTES de entrar no manifest com `auto: true`. Só publica depois de um "pode" explícito dele.
+- Rascunho, teste de formato e exemplo nunca vão pro manifest.
+- Motivo: em 20/10 o post n1-salario-minimo (bloco de notas) foi publicado sem o dono ver; ele achou que era rascunho.
+
+## R10 · Política: Lula e Flávio no mesmo post (20/10/2026)
+
+- De preferência, todo post político traz Lula e Flávio juntos, com fatos do mesmo tipo (R2: sem falsa equivalência, diferença dita quando existe).
+- Fecho padrão, nas palavras do dono: "Um desses dois vai nos governar pelos próximos 4 anos. Você já pensou no seu plano de fuga?"
+- Vorcaro: deixado de lado por enquanto (post m1 pausado).
+- Linha editorial: o "clichê que todo mundo já sabe mas não quer aceitar", só com fato documentado.
