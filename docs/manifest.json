@@ -14,7 +14,7 @@
  {
   "id": "m1-vorcaro",
   "type": "carousel",
-  "auto": true,
+  "auto": false,
   "publish_at": "2026-10-20T23:45:00Z",
   "caption": "Faltam 5 dias.\n\nDaniel Vorcaro, dono do Banco Master, foi preso em março. Em depoimento à PF, disse que tinha \"amigos de todos os poderes\".\n\nLula o recebeu no Planalto em dezembro de 2024, sem registro na agenda, e diz que o assunto era do Banco Central.\n\nFlávio Bolsonaro admitiu que pediu R$ 134 milhões a ele pra um filme sobre o pai. Diz que era patrocínio privado e nega crime.\n\nFontes: O Povo (04/03/2026), Poder360 (26/01/2026), Agência Brasil (13/05/2026).\n\n#eleicoes2026 #segundoturno #bancomaster #planodefuga",
   "media": [
@@ -23,6 +23,7 @@
    "m1-vorcaro/03.jpg",
    "m1-vorcaro/04.jpg",
    "m1-vorcaro/05.jpg"
-  ]
+  ],
+  "note": "Pausado: esperando aprovação do dono."
  }
 ]
