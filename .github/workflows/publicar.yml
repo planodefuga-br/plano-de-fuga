@@ -22,7 +22,7 @@ jobs:
       - name: Publicar o que já está na hora
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
-          PAGES_URL: ${{ vars.PAGES_URL }}
+          PAGES_URL: ${{ vars.PAGES_URL || 'https://planodefuga-br.github.io/plano-de-fuga' }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
         run: python publisher/publish.py
       - name: Salvar estado
