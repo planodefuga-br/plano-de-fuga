@@ -322,6 +322,9 @@ GUIA.append({"id": "g-salario-minimo", "publish_at": "2099-01-01T00:00:00Z", "st
   {"t": "page", "lab": "EM PORTUGAL", "h": "€ 920 por mês.", "s": "Valor de 2026 no continente. São 14 salários no ano.", "src": "Diário da República, 29/12/2025"},
   {"t": "page", "lab": "EM REAIS", "h": "R$ 5.180 por mês.", "s": "€ 920 × R$ 5,63, o euro de 20/10/2026. Dá 3,2 vezes o mínimo brasileiro.", "src": "Banco Central (PTAX)"},
   {"t": "page", "lab": "NO ANO", "h": "R$ 21.073 no Brasil. R$ 72.521 em Portugal.", "s": "13 e 14 salários, no câmbio de 20/10/2026."},
+  {"t": "page", "lab": "MÉDIA OU MEDIANA", "h": "Mediana é o salário do meio.", "s": "Metade das pessoas ganha menos que ela, metade ganha mais. A média soma tudo e divide, e poucos salários altos puxam ela pra cima."},
+  {"t": "page", "lab": "SALÁRIO NO BRASIL", "h": "Média: R$ 3.738 por mês.", "s": "O IBGE não publica a mediana. Mas 69% dos trabalhadores ganham até R$ 3.242, então a mediana fica abaixo disso.", "src": "IBGE, 2º tri 2026 · 4intelligence/PNAD"},
+  {"t": "page", "lab": "SALÁRIO EM PORTUGAL", "h": "Média: € 1.436 por mês.", "s": "São R$ 8.085, sem os subsídios de férias e Natal. A mediana mais recente do INE é de 2021: € 996 no setor privado.", "src": "INE, junho de 2026 e 2021"},
   {"t": "cta", "h": "Aluguel e mercado também custam mais em Portugal.", "s": "O próximo guia compara o custo de vida."},
  ],
  "caption": ""})
