@@ -1,0 +1,34 @@
+name: Publicar no Instagram
+on:
+  # Agendador desligado até o dono liberar. Pra ligar, descomente as 2 linhas abaixo.
+  # schedule:
+  #   - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Só testar (não publica)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: publicar
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Publicar o que já está na hora
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          PAGES_URL: ${{ vars.PAGES_URL }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: python publisher/publish.py
+      - name: Salvar estado
+        if: always()
+        run: |
+          git config user.name "plano-de-fuga-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add publisher/state.json || true
+          git diff --cached --quiet || (git commit -m "estado de publicação" && git push)
