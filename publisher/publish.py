@@ -97,14 +97,19 @@ def teste():
     try:
         ig, user, page = conta_instagram()
         out.update(conta=user, pagina=page, ok_conta=True)
-        try:
-            achados = buscar_audio(ig, AUDIO_TESTE)
-            out["audio_busca"] = AUDIO_TESTE
-            out["audio_resultados"] = [
-                {k: x.get(k) for k in ("audio_id", "title", "display_artist", "duration_in_ms")} for x in achados[:8]
-            ]
-        except Exception as e:
-            out["audio_erro"] = str(e)[:400]
+        out["audio"] = {}
+        for busca in [AUDIO_TESTE, "Ace of Base", "Happy Nation Ace of Base", None]:
+            chave = busca or "(em alta, sem busca)"
+            try:
+                if busca:
+                    achados = buscar_audio(ig, busca)
+                else:
+                    achados = call("GET", "ig_audio", audio_type="music", user_id=ig).get("data", [])
+                out["audio"][chave] = [
+                    {k: x.get(k) for k in ("audio_id", "title", "display_artist", "duration_in_ms")} for x in achados[:6]
+                ]
+            except Exception as e:
+                out["audio"][chave] = "ERRO: " + str(e)[:300]
         try:
             lim = call("GET", f"{ig}/content_publishing_limit", fields="quota_usage,config")
             out["limite_publicacao"] = lim.get("data")
