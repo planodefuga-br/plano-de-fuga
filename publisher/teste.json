@@ -1,0 +1,18 @@
+{
+ "quando": "2026-10-20T21:55:28.304866+00:00",
+ "token_presente": true,
+ "conta": "planodefuga_br",
+ "pagina": "Plano de Fuga",
+ "ok_conta": true,
+ "audio_busca": "Happy Nation",
+ "audio_resultados": [],
+ "limite_publicacao": [
+  {
+   "quota_usage": 0,
+   "config": {
+    "quota_total": 100,
+    "quota_duration": 86400
+   }
+  }
+ ]
+}
