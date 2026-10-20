@@ -1,18 +1,18 @@
 name: Publicar no Instagram
 on:
-  # Agendador desligado até o dono liberar. Pra ligar, descomente as 2 linhas abaixo.
-  # schedule:
-  #   - cron: "*/15 * * * *"
+  # Agendador ligado em 20/10/2026 com ok do dono.
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Só testar (não publica)"
         type: boolean
-        default: true
-  # Mudança no publicador roda um teste automático (nunca publica).
+        default: false
+  # Mudança no manifest publica na hora o que já estiver no horário.
   push:
     branches: [main]
-    paths: ["publisher/publish.py", "publisher/teste.trigger"]
+    paths: ["docs/manifest.json"]
 permissions:
   contents: write
 concurrency: publicar
@@ -27,7 +27,7 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           PAGES_URL: ${{ vars.PAGES_URL || 'https://planodefuga-br.github.io/plano-de-fuga' }}
-          DRY_RUN: ${{ (github.event_name == 'push' || inputs.dry_run) && '1' || '0' }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
         run: python publisher/publish.py
       - name: Salvar estado e resultado do teste
         if: always()

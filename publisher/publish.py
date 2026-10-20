@@ -67,6 +67,27 @@ def wait_ready(cid, video=False):
     raise RuntimeError(f"container {cid} não ficou pronto")
 
 
+def esperar_midia(post, limite_s=420):
+    """Espera o GitHub Pages servir todas as mídias do post (deploy leva 1 a 3 min)."""
+    fim = time.time() + limite_s
+    while True:
+        faltando = []
+        for m in post["media"]:
+            try:
+                req = urllib.request.Request(f"{BASE}/{m}", method="HEAD")
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    if r.status != 200:
+                        faltando.append(m)
+            except Exception:
+                faltando.append(m)
+        if not faltando:
+            return True
+        if time.time() > fim:
+            print("mídia ainda não está no Pages:", faltando)
+            return False
+        time.sleep(20)
+
+
 def publish(ig, post):
     if post["type"] == "carousel":
         kids = [call("POST", f"{ig}/media", image_url=f"{BASE}/{m}", is_carousel_item="true")["id"] for m in post["media"]]
@@ -147,6 +168,9 @@ def main():
             state["published"][p["id"]] = {"skipped": "atrasado", "at": now.isoformat()}
             print("pulado (atrasado):", p["id"])
             continue
+        if not esperar_midia(p):
+            print("adiado (Pages ainda não publicou):", p["id"])
+            break
         try:
             mid = publish(ig, p)
             state["published"][p["id"]] = {"media_id": mid, "at": now.isoformat()}

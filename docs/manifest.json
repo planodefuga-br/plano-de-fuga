@@ -1,1 +1,28 @@
-[]
+[
+ {
+  "id": "n1-salario-minimo",
+  "type": "carousel",
+  "auto": true,
+  "publish_at": "2026-10-20T22:34:17Z",
+  "caption": "Salário mínimo de 2026: R$ 1.621 no Brasil, € 920 em Portugal.\n\nNo câmbio de hoje (R$ 5,63), o mínimo português dá R$ 5.180 por mês. É 3,2 vezes o brasileiro.\nNo ano a diferença cresce, porque Portugal paga 14 salários e o Brasil paga 13.\n\nMas aluguel, mercado e transporte também custam mais lá. No próximo post a gente faz essa conta.\n\nFontes: Decreto 12.797/2025, Governo de Portugal (salário mínimo 2026), Banco Central (PTAX de 20/10/2026).\n\n#salariominimo #morarfora #portugal #planodefuga",
+  "media": [
+   "n1-salario-minimo/01.jpg",
+   "n1-salario-minimo/02.jpg",
+   "n1-salario-minimo/03.jpg"
+  ]
+ },
+ {
+  "id": "m1-vorcaro",
+  "type": "carousel",
+  "auto": true,
+  "publish_at": "2026-10-20T23:45:00Z",
+  "caption": "Faltam 5 dias.\n\nDaniel Vorcaro, dono do Banco Master, foi preso em março. Em depoimento à PF, disse ter \"amigos de todos os poderes\".\n\nLula o recebeu no Planalto em dezembro de 2024, sem registro na agenda. Diz que o assunto era do Banco Central.\n\nFlávio Bolsonaro admitiu ter pedido R$ 134 milhões a ele pra um filme sobre o pai. Diz que era patrocínio privado e nega crime.\n\nEste post não diz que alguém cometeu crime. Diz que os dois sentaram com ele.\n\nFontes: O Povo (04/03/2026), Poder360 (26/01/2026), Agência Brasil (13/05/2026).\n\n#eleicoes2026 #segundoturno #bancomaster #planodefuga",
+  "media": [
+   "m1-vorcaro/01.jpg",
+   "m1-vorcaro/02.jpg",
+   "m1-vorcaro/03.jpg",
+   "m1-vorcaro/04.jpg",
+   "m1-vorcaro/05.jpg"
+  ]
+ }
+]
