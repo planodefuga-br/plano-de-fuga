@@ -1,5 +1,5 @@
 {
- "quando": "2026-10-20T21:58:40.278100+00:00",
+ "quando": "2026-10-21T15:58:59.129375+00:00",
  "token_presente": true,
  "conta": "planodefuga_br",
  "pagina": "Plano de Fuga",
@@ -12,7 +12,7 @@
  },
  "limite_publicacao": [
   {
-   "quota_usage": 0,
+   "quota_usage": 4,
    "config": {
     "quota_total": 100,
     "quota_duration": 86400
