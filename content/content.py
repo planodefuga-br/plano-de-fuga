@@ -339,3 +339,68 @@ REELS.append({"id": "r-p1-processos", "post_at_brt": "20/10 20h", "cards": [
   {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
  ],
  "caption": ""})
+
+
+# ===================== 21/10/2026 (quarta, Faltam 4 dias) =====================
+GUIA.append({"id": "g-bluecard", "publish_at": "2099-01-01T00:00:00Z", "stamp": ("ALEMANHA", "BLUE CARD"), "slides": [
+  {"t": "cover", "k": "GUIA · ALEMANHA", "h": "Quanto você precisa ganhar pra trabalhar na Alemanha com o Blue Card."},
+  {"t": "page", "lab": "O QUE É", "h": "Visto de trabalho pra quem tem diploma.", "s": "O Blue Card da União Europeia dá trabalho e residência a quem tem curso superior e oferta de emprego na Alemanha."},
+  {"t": "page", "lab": "O SALÁRIO MÍNIMO", "h": "€ 50.700 por ano.", "s": "Uns € 4.225 brutos por mês. É o valor de 2026.", "src": "Ministério das Relações Exteriores da Alemanha, via The Local"},
+  {"t": "page", "lab": "ÁREAS COM FALTA DE GENTE", "h": "€ 45.934 por ano.", "s": "Vale pra matemática, TI, ciências, engenharia e saúde.", "src": "Ministério das Relações Exteriores da Alemanha, via The Local"},
+  {"t": "page", "lab": "TI SEM DIPLOMA", "h": "Em TI dá pra pedir sem diploma.", "s": "Com 3 anos de experiência nos últimos 7 anos, oferta de emprego na área e aprovação da agência de emprego alemã."},
+  {"t": "page", "lab": "EM REAIS", "h": "R$ 23.789 brutos por mês.", "s": "€ 4.225 no câmbio de 20/10/2026 (R$ 5,63)."},
+  {"t": "cta", "h": "Salva e manda pra quem trabalha com TI."},
+ ],
+ "caption": ""})
+
+GUIA.append({"id": "g-nomade-espanha", "publish_at": "2099-01-01T00:00:00Z", "stamp": ("ESPANHA", "NÔMADE DIGITAL"), "slides": [
+  {"t": "cover", "k": "GUIA · ESPANHA", "h": "Quanto você precisa ganhar pra morar na Espanha trabalhando pra fora."},
+  {"t": "page", "lab": "A REGRA", "h": "A renda tem que vir de fora da Espanha.", "s": "Empresa ou clientes no exterior. No máximo 20% do trabalho pode ser pra empresas espanholas.", "src": "Ministério da Inclusão da Espanha"},
+  {"t": "page", "lab": "O VALOR", "h": "€ 34.188 por ano.", "s": "200% do salário mínimo espanhol de 2026. Dividido por 12, dá uns € 2.849 por mês.", "src": "Ministério da Inclusão · Real Decreto 126/2026"},
+  {"t": "page", "lab": "COM FAMÍLIA", "h": "Mais 75% do salário mínimo pelo primeiro familiar.", "s": "E mais 25% por cada pessoa a mais.", "src": "Ministério da Inclusão da Espanha"},
+  {"t": "page", "lab": "AUTÔNOMO", "h": "Contrato de pelo menos 3 meses.", "s": "Quem trabalha como autônomo precisa de contrato de 3 meses ou mais com a empresa estrangeira.", "src": "Ministério da Inclusão da Espanha"},
+  {"t": "cta", "h": "O trabalho tem que dar pra fazer 100% remoto.", "s": "Salva pra quando for planejar."},
+ ],
+ "caption": ""})
+
+GUIA.append({"id": "g-aluguel", "publish_at": "2099-01-01T00:00:00Z", "stamp": ("EUROPA", "ALUGUEL"), "slides": [
+  {"t": "cover", "k": "BRASIL × EUROPA", "h": "Quanto custa alugar 50 m² em Lisboa, Madri, Berlim e São Paulo."},
+  {"t": "page", "lab": "LISBOA", "h": "€ 1.255 por mês.", "s": "€ 25,1 o metro quadrado. Em reais, R$ 7.066. É 136% do salário mínimo português.", "src": "idealista, setembro de 2026"},
+  {"t": "page", "lab": "MADRI", "h": "€ 1.165 por mês.", "s": "€ 23,3 o metro quadrado. Em reais, R$ 6.560. É 95% do salário mínimo espanhol.", "src": "idealista, agosto de 2026"},
+  {"t": "page", "lab": "BERLIM", "h": "€ 765 por mês.", "s": "€ 15,30 o metro quadrado, sem água, luz e aquecimento. Em reais, R$ 4.307.", "src": "Greix, IfW Kiel, 2º trimestre de 2026"},
+  {"t": "page", "lab": "SÃO PAULO", "h": "R$ 3.289 por mês.", "s": "R$ 65,78 o metro quadrado. São 2 salários mínimos brasileiros.", "src": "FipeZap, setembro de 2026"},
+  {"t": "cta", "h": "Em São Paulo, o aluguel pesa mais no salário mínimo do que em Lisboa ou Madri.", "s": "Valores de anúncio. Câmbio de 20/10/2026 (R$ 5,63)."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-bluecard", "post_at_brt": "21/10 11h", "cards": [
+  {"t": "title", "k": "GUIA · ALEMANHA", "h": "Quanto você precisa ganhar pra trabalhar na Alemanha com o Blue Card."},
+  {"t": "say", "h": "€ 50.700 por ano em 2026."},
+  {"t": "say", "h": "Uns € 4.225 brutos por mês."},
+  {"t": "say", "h": "Em TI, engenharia e saúde: € 45.934 por ano."},
+  {"t": "say", "h": "Em TI dá pra pedir sem diploma, com 3 anos de experiência."},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-aluguel", "post_at_brt": "21/10 18h", "cards": [
+  {"t": "title", "k": "BRASIL × EUROPA", "h": "Aluguel de 50 m² em quatro cidades."},
+  {"t": "say", "h": "Lisboa: € 1.255. É 136% do mínimo português."},
+  {"t": "say", "h": "Madri: € 1.165. É 95% do mínimo espanhol."},
+  {"t": "say", "h": "Berlim: € 765, sem as contas."},
+  {"t": "say", "h": "São Paulo: R$ 3.289. São 2 salários mínimos."},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-p2-condenados", "post_at_brt": "21/10 20h", "cards": [
+  {"t": "title", "k": "FALTAM 4 DIAS", "h": "Lula e Flávio têm gente próxima condenada pelo STF."},
+  {"t": "say", "h": "Um desses dois vai nos governar pelos próximos 4 anos."},
+  {"t": "say", "h": "Você já pensou no seu plano de fuga?"},
+  clip("dirceu", stamp="CONDENADO"),
+  {"t": "say", "h": "Dirceu era o chefe da Casa Civil de Lula. Lula não foi denunciado."},
+  clip("golpe", stamp="CONDENADO"),
+  {"t": "say", "h": "Jair é o pai do Flávio. Flávio não foi réu nesse processo."},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
+ ],
+ "caption": ""})
