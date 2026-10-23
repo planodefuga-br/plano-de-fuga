@@ -121,4 +121,6 @@ Regras ditadas pelo dono. Valem pra todo texto do projeto (slide, legenda, rotei
 
 - Palavras do dono: o perfil não é pra quem vai "tentar uma vida nova" na Europa sem especialização e sem direção. É pra quem fez ou faz faculdade, quer fazer mestrado ou pegar trabalho com visto patrocinado.
 - Ênfase em tecnologia: salário da área, empresas que contratam e patrocinam visto, vistos de trabalho qualificado (Blue Card, kennismigrant, Critical Skills), bolsas de mestrado e o caminho do mestrado pro trabalho.
+- Mais generalista que um perfil só de tech: tecnologia e dados em destaque, mas também outras profissões qualificadas (engenharia, saúde, finanças etc.), bolsas e vistos.
+- Referência de formato indicada pelo dono: @tripleten.brasil (100% tech; inspirar em partes, não copiar).
 - Isso vale pra posts, stories e comentários em outros perfis.
