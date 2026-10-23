@@ -404,3 +404,60 @@ REELS.append({"id": "r-p2-condenados", "post_at_brt": "21/10 20h", "cards": [
   {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
  ],
  "caption": ""})
+
+H["inss_pf"] = ("Fraude de R$ 6,3 bi: presidente do INSS é afastado em operação da PF", "CONGRESSO EM FOCO", "23.04.2025")
+H["inss_bbc"] = ("Fraude do INSS é culpa do governo Lula ou do governo Bolsonaro? O que é fato na batalha de versões", "BBC NEWS BRASIL / A GAZETA", "30.04.2025")
+
+# ===================== sábado 24/10/2026 (Falta 1 dia) =====================
+GUIA.append({"id": "g-d8", "publish_at": "2099-01-01T00:00:00Z", "stamp": ("PORTUGAL", "VISTO D8"), "slides": [
+  {"t": "cover", "k": "GUIA · PORTUGAL", "h": "Quanto você precisa ganhar pra morar em Portugal trabalhando pra fora."},
+  {"t": "page", "lab": "O VALOR", "h": "€ 3.680 por mês.", "s": "É 4 vezes o salário mínimo português de 2026 (€ 920). Em reais, R$ 20.720.", "src": "Lei 23/2007, art. 61.º-B · Decreto-Lei 139/2025"},
+  {"t": "page", "lab": "A REGRA", "h": "O trabalho tem que ser pra fora de Portugal.", "s": "Contrato com empresa estrangeira ou serviços prestados a clientes de fora."},
+  {"t": "page", "lab": "A PROVA", "h": "Média dos últimos 3 meses.", "s": "O consulado olha quanto você recebeu em média nos últimos três meses, não o saldo da conta."},
+  {"t": "page", "lab": "O PRAZO", "h": "60 dias pro consulado decidir.", "s": "É o prazo da lei. Depois, a AIMA tem 90 dias pra dar a autorização de residência.", "src": "Lei 23/2007"},
+  {"t": "cta", "h": "Salva e manda pra quem trabalha remoto pra fora.", "s": "Câmbio de 20/10/2026 (R$ 5,63)."},
+ ],
+ "caption": ""})
+
+GUIA.append({"id": "g-minimo-europa", "publish_at": "2099-01-01T00:00:00Z", "stamp": ("EUROPA", "SALÁRIO MÍNIMO"), "slides": [
+  {"t": "cover", "k": "BRASIL × EUROPA", "h": "O salário mínimo de 10 países da Europa e o do Brasil, em euros."},
+  {"t": "page", "lab": "OS MAIS ALTOS", "h": "Luxemburgo € 2.771, Irlanda € 2.391, Alemanha € 2.343.", "s": "Por mês, em julho de 2026.", "src": "Eurostat, via Euronews"},
+  {"t": "page", "lab": "NO MEIO", "h": "Holanda € 2.338, Bélgica € 2.234, França € 1.867.", "src": "Eurostat, via Euronews"},
+  {"t": "page", "lab": "MAIS PERTO DE NÓS", "h": "Espanha € 1.425, Polônia € 1.119, Portugal € 1.073, Bulgária € 620.", "s": "Espanha e Portugal pagam 14 salários por ano. O Eurostat divide o total por 12.", "src": "Eurostat, via Euronews"},
+  {"t": "page", "lab": "BRASIL", "h": "€ 312 por mês.", "s": "R$ 1.621 com o 13º dividido por 12, no câmbio de 20/10/2026 (R$ 5,63).", "src": "Decreto 12.797/2025 · Banco Central"},
+  {"t": "cta", "h": "O mínimo da Bulgária, o mais baixo da lista, é o dobro do brasileiro.", "s": "Salva pra comparar."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-d8", "post_at_brt": "24/10 11h", "cards": [
+  {"t": "title", "k": "GUIA · PORTUGAL", "h": "Quanto ganhar pra morar em Portugal trabalhando pra fora."},
+  {"t": "say", "h": "€ 3.680 por mês em 2026."},
+  {"t": "say", "h": "É 4 vezes o salário mínimo português."},
+  {"t": "say", "h": "O trabalho tem que ser pra empresa ou clientes de fora de Portugal."},
+  {"t": "say", "h": "O consulado olha a média dos últimos 3 meses."},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-minimo-europa", "post_at_brt": "24/10 18h", "cards": [
+  {"t": "title", "k": "BRASIL × EUROPA", "h": "Salário mínimo, em euros por mês."},
+  {"t": "say", "h": "Luxemburgo: € 2.771."},
+  {"t": "say", "h": "Alemanha: € 2.343."},
+  {"t": "say", "h": "Portugal: € 1.073."},
+  {"t": "say", "h": "Bulgária: € 620."},
+  {"t": "say", "h": "Brasil: € 312."},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
+ ],
+ "caption": ""})
+
+REELS.append({"id": "r-p3-inss", "post_at_brt": "24/10 20h", "cards": [
+  {"t": "title", "k": "FALTA 1 DIA", "h": "A fraude do INSS passou pelos dois governos."},
+  {"t": "say", "h": "Um desses dois vai nos governar pelos próximos 4 anos."},
+  {"t": "say", "h": "Você já pensou no seu plano de fuga?"},
+  clip("inss_pf"),
+  {"t": "say", "h": "R$ 6,3 bilhões descontados de aposentados entre 2019 e 2024."},
+  {"t": "say", "h": "2022, governo de Jair Bolsonaro, pai do Flávio: R$ 706 milhões."},
+  {"t": "say", "h": "2023, governo Lula: R$ 1,3 bilhão."},
+  {"t": "exit", "h": "Segue o perfil pra montar o teu plano de fuga."},
+ ],
+ "caption": ""})
