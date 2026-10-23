@@ -92,7 +92,7 @@ Regras dos ganchos:
 - **Primeira linha** se sustenta sozinha nos 125 caracteres. Política abre com o "Faltam N dias".
 - Corpo: uma ideia, linhas curtas, linha em branco entre blocos. Máximo 2.200 caracteres.
 - Fonte com nome na legenda (no Reel ela sai da tela e vai pra cá, R3).
-- **Um pedido só**, com motivo. Nada de "o que você acha?", "comenta SIM", "marca 3 amigos" (o Instagram derruba esse tipo de isca).
+- **Um pedido só**, com motivo. Às vezes o pedido é entrar no grupo do Telegram (R11), quando o post dá motivo (ex.: "no grupo a gente manda o passo a passo do pedido"). Nada de "o que você acha?", "comenta SIM", "marca 3 amigos" (o Instagram derruba esse tipo de isca).
 - Sem emoji.
 - Hashtags no fim.
 

@@ -109,3 +109,10 @@ Regras ditadas pelo dono. Valem pra todo texto do projeto (slide, legenda, rotei
 
 - Adaptadas de sergebulaev/instagram-skills (MIT) a pedido do dono: `projeto-claude/skills/plano-de-fuga-post`, `plano-de-fuga-perfil` e `plano-de-fuga-semana`.
 - Decisões do dono: travessão continua proibido (a skill original aceitava 1 ou 2), publicação só pela nossa API do Instagram (sem Publora), tudo em português por ora.
+
+## R11 · Objetivo do perfil: comunidade no Telegram (23/10/2026)
+
+- Palavras do dono: o objetivo do Plano de Fuga é criar uma comunidade de pessoas que querem sair do Brasil no Telegram e, em algum momento, vender algo.
+- O Instagram é a porta de entrada. O link do perfil leva pro grupo do Telegram.
+- O pedido no fim de um post pode ser entrar no grupo, com motivo concreto, sem virar isca em todo post.
+- A bio da eleição foi descartada. A bio o dono coloca ele mesmo no app.

@@ -26,7 +26,7 @@ O dono aplica no app (a API não muda bio nem nome). Sempre mandar o texto pront
 | 2 | **Nome** | marca + palavra que a pessoa digita na busca, até 30 caracteres. É o campo que a busca do Instagram indexa (o @ não é) |
 | 3 | **@** | `planodefuga_br`, já definido |
 | 4 | **Bio** | até 150 caracteres: o que a pessoa ganha + do que o perfil fala + um fato. Sem frase motivacional |
-| 5 | **Link** | um só, ligado ao objetivo. Se não houver destino real, sem link |
+| 5 | **Link** | o grupo do Telegram, direto (R11: o objetivo do perfil é a comunidade no Telegram) |
 | 6 | **Categoria** | um rótulo que reforça a bio sem repetir |
 | 7 | **Destaques** | 4 a 6, na ordem da próxima pergunta de quem chega, capas no mesmo estilo, nome curto que não corta |
 | 8 | **Primeira grade (9 posts)** | parece um conjunto: mesmo tom, legível de longe, mostra os temas (vistos, salários, política) |
@@ -36,7 +36,7 @@ O dono aplica no app (a API não muda bio nem nome). Sempre mandar o texto pront
 
 - **Nome:** exemplo de formato "Plano de Fuga | Morar fora" (26 caracteres; contar com código antes de mandar).
 - **Bio:** começa pelo que a pessoa ganha, não por quem somos. Sem travessão, sem emoji, sem "transforme sua vida". Fato concreto vale mais que promessa ("vistos, salários e impostos de cada país da Europa").
-- Até a eleição (25/10/2026), a bio pode citar a série política. Depois, voltar pro tema fixo.
+- A bio termina chamando pro grupo do Telegram (R11). O dono cola a bio no app.
 - Nunca dado pessoal do dono, nem nome, nem cidade.
 - Nunca entregar bio cortada ou nome de destaque que corta.
 - **Destaques sugeridos:** Comece aqui, Vistos, Salários, Custo de vida, Eleição (temporário).
