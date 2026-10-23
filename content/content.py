@@ -394,7 +394,7 @@ REELS.append({"id": "r-aluguel", "post_at_brt": "21/10 18h", "cards": [
  "caption": ""})
 
 REELS.append({"id": "r-p2-condenados", "post_at_brt": "21/10 20h", "cards": [
-  {"t": "title", "k": "FALTAM 4 DIAS", "h": "Lula e Flávio têm gente próxima condenada pelo STF."},
+  {"t": "title", "k": "FALTAM 2 DIAS", "h": "Lula e Flávio têm gente próxima condenada pelo STF."},
   {"t": "say", "h": "Um desses dois vai nos governar pelos próximos 4 anos."},
   {"t": "say", "h": "Você já pensou no seu plano de fuga?"},
   clip("dirceu", stamp="CONDENADO"),

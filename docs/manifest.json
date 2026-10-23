@@ -64,5 +64,101 @@
    "reels/r-p1-processos.mp4"
   ],
   "note": "Happy Nation embutida no MP4 (refrão, 1:17)."
+ },
+ {
+  "id": "g-bluecard",
+  "type": "carousel",
+  "auto": false,
+  "publish_at": "2026-10-23T12:00:00Z",
+  "caption": "O Blue Card da União Europeia é o visto de trabalho alemão pra quem tem diploma e oferta de emprego.\n\nEm 2026, o salário mínimo pra pedir é € 50.700 por ano (uns € 4.225 brutos por mês). Em áreas com falta de profissionais, como TI, engenharia e saúde, cai pra € 45.934.\n\nProfissional de TI pode pedir sem diploma, com 3 anos de experiência nos últimos 7 anos.\n\nFonte: Ministério das Relações Exteriores da Alemanha, via The Local.\n\n#alemanha #bluecard #trabalharfora #planodefuga",
+  "media": [
+   "g-bluecard/01.jpg",
+   "g-bluecard/02.jpg",
+   "g-bluecard/03.jpg",
+   "g-bluecard/04.jpg",
+   "g-bluecard/05.jpg",
+   "g-bluecard/06.jpg",
+   "g-bluecard/07.jpg"
+  ],
+  "note": "Na fila, esperando o pode do dono."
+ },
+ {
+  "id": "r-bluecard",
+  "type": "reel",
+  "auto": false,
+  "publish_at": "2026-10-23T14:00:00Z",
+  "caption": "Blue Card da Alemanha em 2026: € 50.700 por ano, ou € 45.934 em TI, engenharia e saúde. Em TI dá pra pedir sem diploma, com 3 anos de experiência.\n\nFonte: Ministério das Relações Exteriores da Alemanha, via The Local.\n\n#alemanha #bluecard #planodefuga",
+  "media": [
+   "reels/r-bluecard.mp4"
+  ],
+  "note": "Na fila, esperando o pode do dono."
+ },
+ {
+  "id": "g-nomade-espanha",
+  "type": "carousel",
+  "auto": false,
+  "publish_at": "2026-10-23T16:00:00Z",
+  "caption": "A Espanha tem visto pra quem trabalha remoto pra empresa ou clientes de fora do país.\n\nEm 2026, a renda mínima é € 34.188 por ano, 200% do salário mínimo espanhol. Com família, soma 75% do salário mínimo pelo primeiro familiar e 25% por cada pessoa a mais. No máximo 20% do trabalho pode ser pra empresas espanholas.\n\nFontes: Ministério da Inclusão da Espanha, Real Decreto 126/2026.\n\n#espanha #nomadedigital #trabalhoremoto #planodefuga",
+  "media": [
+   "g-nomade-espanha/01.jpg",
+   "g-nomade-espanha/02.jpg",
+   "g-nomade-espanha/03.jpg",
+   "g-nomade-espanha/04.jpg",
+   "g-nomade-espanha/05.jpg",
+   "g-nomade-espanha/06.jpg"
+  ],
+  "note": "Na fila, esperando o pode do dono."
+ },
+ {
+  "id": "g-aluguel",
+  "type": "carousel",
+  "auto": false,
+  "publish_at": "2026-10-23T20:00:00Z",
+  "caption": "Aluguel de um apartamento de 50 m², pelo preço médio de anúncio:\n\nLisboa: € 1.255 (R$ 7.066), 136% do salário mínimo português.\nMadri: € 1.165 (R$ 6.560), 95% do salário mínimo espanhol.\nBerlim: € 765 (R$ 4.307), sem água, luz e aquecimento.\nSão Paulo: R$ 3.289, 2 salários mínimos brasileiros.\n\nCâmbio de 20/10/2026 (R$ 5,63).\nFontes: idealista (Lisboa, set/2026; Madri, ago/2026), Greix/IfW Kiel (Berlim, 2º tri 2026), FipeZap (São Paulo, set/2026).\n\n#aluguel #morarfora #custodevida #planodefuga",
+  "media": [
+   "g-aluguel/01.jpg",
+   "g-aluguel/02.jpg",
+   "g-aluguel/03.jpg",
+   "g-aluguel/04.jpg",
+   "g-aluguel/05.jpg",
+   "g-aluguel/06.jpg"
+  ],
+  "note": "Na fila, esperando o pode do dono."
+ },
+ {
+  "id": "r-aluguel",
+  "type": "reel",
+  "auto": false,
+  "publish_at": "2026-10-23T21:00:00Z",
+  "caption": "Aluguel de 50 m²: Lisboa € 1.255, Madri € 1.165, Berlim € 765 (sem as contas), São Paulo R$ 3.289. Em São Paulo, são 2 salários mínimos.\n\nFontes: idealista, Greix/IfW Kiel, FipeZap.\n\n#aluguel #morarfora #planodefuga",
+  "media": [
+   "reels/r-aluguel.mp4"
+  ],
+  "note": "Na fila, esperando o pode do dono."
+ },
+ {
+  "id": "r-p2-condenados",
+  "type": "reel",
+  "auto": false,
+  "publish_at": "2026-10-23T23:00:00Z",
+  "caption": "Faltam 2 dias.\n\nJosé Dirceu, chefe da Casa Civil no 1º governo Lula, foi condenado pelo STF em 2012 por corrupção ativa no mensalão. Lula não foi denunciado no processo.\n\nJair Bolsonaro, pai do Flávio, foi condenado pela 1ª Turma do STF em 2025 a 27 anos e 3 meses por tentativa de golpe de Estado e outros crimes. Flávio não foi réu no processo.\n\nUm desses dois vai nos governar pelos próximos 4 anos. Você já pensou no seu plano de fuga?\n\nFontes: Folha de S.Paulo (10/10/2012), Diário do Comércio (11/09/2025), Jornal do Brasil (13/08/2012).\n\n#eleicoes2026 #segundoturno #lula #flaviobolsonaro #planodefuga",
+  "media": [
+   "reels/r-p2-condenados.mp4"
+  ],
+  "note": "Na fila, esperando o pode do dono."
+ },
+ {
+  "id": "p2-condenados",
+  "type": "carousel",
+  "auto": false,
+  "publish_at": "2026-10-23T23:30:00Z",
+  "caption": "Faltam 2 dias.\n\nJosé Dirceu, chefe da Casa Civil no 1º governo Lula, foi condenado pelo STF em 2012 por corrupção ativa no mensalão. Lula não foi denunciado no processo.\n\nJair Bolsonaro, pai do Flávio, foi condenado pela 1ª Turma do STF em 2025 a 27 anos e 3 meses por tentativa de golpe de Estado e outros crimes. Flávio não foi réu no processo.\n\nUm desses dois vai nos governar pelos próximos 4 anos. Você já pensou no seu plano de fuga?\n\nFontes: Folha de S.Paulo (10/10/2012), Diário do Comércio (11/09/2025), Jornal do Brasil (13/08/2012).\n\n#eleicoes2026 #segundoturno #lula #flaviobolsonaro #planodefuga",
+  "media": [
+   "p2-condenados/01.jpg",
+   "p2-condenados/02.jpg",
+   "p2-condenados/03.jpg",
+   "p2-condenados/04.jpg"
+  ],
+  "note": "Na fila, esperando o pode do dono."
  }
 ]
