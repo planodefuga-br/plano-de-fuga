@@ -116,3 +116,9 @@ Regras ditadas pelo dono. Valem pra todo texto do projeto (slide, legenda, rotei
 - O Instagram é a porta de entrada. O link do perfil leva pro grupo do Telegram.
 - O pedido no fim de um post pode ser entrar no grupo, com motivo concreto, sem virar isca em todo post.
 - A bio da eleição foi descartada. A bio o dono coloca ele mesmo no app.
+
+## R12 · Público: formado, mestrado, visto patrocinado (23/10/2026)
+
+- Palavras do dono: o perfil não é pra quem vai "tentar uma vida nova" na Europa sem especialização e sem direção. É pra quem fez ou faz faculdade, quer fazer mestrado ou pegar trabalho com visto patrocinado.
+- Ênfase em tecnologia: salário da área, empresas que contratam e patrocinam visto, vistos de trabalho qualificado (Blue Card, kennismigrant, Critical Skills), bolsas de mestrado e o caminho do mestrado pro trabalho.
+- Isso vale pra posts, stories e comentários em outros perfis.
