@@ -104,3 +104,8 @@ Regras ditadas pelo dono. Valem pra todo texto do projeto (slide, legenda, rotei
 - Fecho padrão, nas palavras do dono: "Um desses dois vai nos governar pelos próximos 4 anos. Você já pensou no seu plano de fuga?"
 - Vorcaro: deixado de lado por enquanto (post m1 pausado).
 - Linha editorial: o "clichê que todo mundo já sabe mas não quer aceitar", só com fato documentado.
+
+## Skills do Instagram (23/10/2026)
+
+- Adaptadas de sergebulaev/instagram-skills (MIT) a pedido do dono: `projeto-claude/skills/plano-de-fuga-post`, `plano-de-fuga-perfil` e `plano-de-fuga-semana`.
+- Decisões do dono: travessão continua proibido (a skill original aceitava 1 ou 2), publicação só pela nossa API do Instagram (sem Publora), tudo em português por ora.
