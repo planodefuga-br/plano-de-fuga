@@ -128,7 +128,7 @@
  {
   "id": "r-aluguel",
   "type": "reel",
-  "auto": true,
+  "auto": false,
   "publish_at": "2026-10-23T21:00:00Z",
   "caption": "Aluguel de 50 m²: Lisboa € 1.255, Madri € 1.165, Berlim € 765 (sem as contas), São Paulo R$ 3.289. Em São Paulo, são 2 salários mínimos.\n\nFontes: idealista, Greix/IfW Kiel, FipeZap.\n\n#aluguel #morarfora #planodefuga",
   "media": [

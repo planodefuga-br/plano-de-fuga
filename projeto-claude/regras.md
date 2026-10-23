@@ -71,7 +71,8 @@ Regras ditadas pelo dono. Valem pra todo texto do projeto (slide, legenda, rotei
 
 ## R6 · Música dentro do vídeo (20/10/2026)
 
-- A Happy Nation vai embutida no MP4 dos Reels. O dono confia que o Instagram reconhece a faixa (já aconteceu com vídeos dele).
+- A Happy Nation é SÓ dos Reels políticos (correção do dono em 23/10/2026: não tem nada a ver em Reel que não é de política). Reels de guia, visto e salário precisam de outra trilha, a definir com o dono.
+- A Happy Nation vai embutida no MP4 dos Reels políticos. O dono confia que o Instagram reconhece a faixa (já aconteceu com vídeos dele).
 - O publicador tenta a Audio API primeiro. Se ela achar a música, anexa pela API. Se não, sai com a faixa do vídeo.
 - Um teste diário (workflow "Testar Audio API", 11h17 UTC) confere se a API já libera catálogo. Resultado em `publisher/teste.json` no repositório.
 - O arquivo de áudio é fornecido pelo dono e fica em `assets/audio/` (não vai pro repositório público).
