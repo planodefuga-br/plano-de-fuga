@@ -21,7 +21,7 @@ TESTE = ROOT / "publisher" / "teste.json"
 GRAPH = "https://graph.facebook.com/v22.0"
 TOKEN = os.environ.get("IG_TOKEN", "")
 BASE = os.environ.get("PAGES_URL", "").rstrip("/")
-LATE_H = 6
+LATE_H = 12  # o agendador do GitHub atrasa 3 a 5 h; acima disso pula
 DRY = os.environ.get("DRY_RUN") == "1"
 AUDIO_TESTE = os.environ.get("AUDIO_TESTE", "Happy Nation")
 
@@ -162,6 +162,7 @@ def main():
     due = [p for p in manifest if p.get("auto", True) and p["id"] not in state["published"]
            and state["failures"].get(p["id"], 0) < 3 and when(p) <= now]
     due.sort(key=lambda p: p["publish_at"])
+    erro = False
     for p in due:
         late = (now - when(p)).total_seconds() / 3600
         if late > LATE_H:
@@ -175,15 +176,17 @@ def main():
             mid = publish(ig, p)
             state["published"][p["id"]] = {"media_id": mid, "at": now.isoformat()}
             print("publicado:", p["id"], mid)
-            break  # um por execução
+            STATE.write_text(json.dumps(state, indent=1))
+            time.sleep(60)  # todos os atrasados na mesma execução, com 1 min entre eles
         except Exception as e:
             state["failures"][p["id"]] = state["failures"].get(p["id"], 0) + 1
             print("ERRO:", p["id"], e, file=sys.stderr)
-            STATE.write_text(json.dumps(state, indent=1))
-            sys.exit(1)
+            erro = True
     if not due:
         print("nada pra publicar agora")
     STATE.write_text(json.dumps(state, indent=1))
+    if erro:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
